@@ -1,14 +1,22 @@
-Cómo usar estos archivos para publicar FitPulse gratis y convertirla en APK:
+Archivos para publicar FitPulse gratis y convertirla en APK (versión 2):
 
-1. Sube estos 3 archivos (index.html, manifest.json, sw.js) a un repositorio
-   público nuevo en GitHub (github.com), tal cual, en la raíz del repositorio.
-2. En el repositorio: Settings → Pages → Branch "main" / carpeta "root" → Save.
-   GitHub te dará una URL tipo https://tuusuario.github.io/tu-repo/
-3. Ve a pwabuilder.com, pega esa URL y genera el paquete Android (APK).
-   Necesitarás subir también un icono (192x192 y 512x512 px) para
-   icon-192.png e icon-512.png, o dejar que PWABuilder los genere por ti.
-4. Descarga el APK, pásalo a tu móvil Android e instálalo.
+1. Sube estos archivos a la RAÍZ de tu repositorio en GitHub (la misma
+   carpeta donde ya tienes index.html, manifest.json y sw.js):
+     - manifest.json   (sustituye al que ya tenías: ahora incluye
+                         descripción y los iconos correctos)
+     - icon-192.png
+     - icon-512.png
+     - icon-512-maskable.png
 
-Nota: falta añadir icon-192.png e icon-512.png a la carpeta (cualquier
-imagen cuadrada te sirve; PWABuilder también puede generarlos automáticamente
-a partir de un logo que le subas).
+2. Asegúrate de que quedan en la misma carpeta que index.html (para tu
+   sitio, dentro de la carpeta "fit1").
+
+3. En PWABuilder, pulsa el botón de refrescar (↻) junto a "Last tested"
+   para que vuelva a analizar tu sitio, o pega de nuevo la URL.
+
+4. El marcador de "Manifest" debería subir bastante y los dos errores
+   rojos (enlaces de iconos / tipos de icono) deberían desaparecer.
+   El aviso de "Add screenshots" es opcional, no bloquea el empaquetado.
+
+5. Pulsa "Package For Stores" → Android → Generate Package → descarga
+   el APK, pásalo al móvil e instálalo.
