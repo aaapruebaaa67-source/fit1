@@ -485,7 +485,7 @@ const getDb=()=>{try{initFb();return firebase.firestore()}catch(e){return null}}
 const getAuthSvc=()=>{try{initFb();return firebase.auth()}catch(e){return null}};
 // ⚠️ Pon aquí el correo con el que TÚ (el creador) inicias sesión.
 // Solo esa cuenta verá el engranaje ⚙ del panel de administración.
-const OWNER_EMAIL='pon-aqui-tu-correo@ejemplo.com';
+const OWNER_EMAIL='carlocanashernandez67@gmail.com';
 const fbAuthError=e=>{const m={'auth/email-already-in-use':'Ese correo ya tiene una cuenta. Inicia sesión en su lugar.','auth/weak-password':'La contraseña es demasiado débil (mínimo 6 caracteres para Firebase).','auth/invalid-email':'Ese correo no es válido.','auth/user-not-found':'No existe ninguna cuenta con ese correo.','auth/wrong-password':'Contraseña incorrecta.','auth/too-many-requests':'Demasiados intentos. Prueba de nuevo en un rato.'};return (e&&m[e.code])||'No se pudo completar la operación.'};
 
 // ==== Capa de datos del Admin Dashboard (100% asíncrona) ====
