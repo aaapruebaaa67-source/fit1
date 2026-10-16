@@ -1,22 +1,15 @@
-Archivos para publicar FitPulse gratis y convertirla en APK (versión 2):
+FitPulse · archivos publicados en GitHub Pages
+https://aaapruebaaa67-source.github.io/fit1/
 
-1. Sube estos archivos a la RAÍZ de tu repositorio en GitHub (la misma
-   carpeta donde ya tienes index.html, manifest.json y sw.js):
-     - manifest.json   (sustituye al que ya tenías: ahora incluye
-                         descripción y los iconos correctos)
-     - icon-192.png
-     - icon-512.png
-     - icon-512-maskable.png
+index.html        App completa (autónoma, todo en un archivo)
+manifest.json     Datos de instalación: nombre, iconos, descripción y capturas
+sw.js             Service worker v3: funciona sin conexión
+icon-*.png        Iconos (192, 512 y 512 maskable)
+screenshots/      Capturas que muestra PWABuilder / Play Store al instalar
+.well-know        Nota antigua sobre assetlinks (ver abajo)
 
-2. Asegúrate de que quedan en la misma carpeta que index.html (para tu
-   sitio, dentro de la carpeta "fit1").
-
-3. En PWABuilder, pulsa el botón de refrescar (↻) junto a "Last tested"
-   para que vuelva a analizar tu sitio, o pega de nuevo la URL.
-
-4. El marcador de "Manifest" debería subir bastante y los dos errores
-   rojos (enlaces de iconos / tipos de icono) deberían desaparecer.
-   El aviso de "Add screenshots" es opcional, no bloquea el empaquetado.
-
-5. Pulsa "Package For Stores" → Android → Generate Package → descarga
-   el APK, pásalo al móvil e instálalo.
+Para el APK sin barra de dirección (TWA), Android busca el archivo
+  https://aaapruebaaa67-source.github.io/.well-known/assetlinks.json
+Ese archivo tiene que estar en un repositorio llamado
+  aaapruebaaa67-source.github.io
+(no en fit1). PWABuilder te lo da al generar el paquete Android.

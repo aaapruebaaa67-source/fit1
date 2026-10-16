@@ -1,7 +1,7 @@
 {
   "name": "FitPulse - Tu ritmo, tu progreso",
   "short_name": "FitPulse",
-  "description": "Seguimiento diario de calorías, macros, suplementos, agua, pasos y progreso corporal para recomposición física.",
+  "description": "Tu entrenador, tu nutricionista y tu lista de la compra en el bolsillo: calorías y macros, rutinas paso a paso, menús con lo que tienes en casa y progreso. Gratis.",
   "id": "/fit1/",
   "start_url": "./index.html",
   "scope": "./",
@@ -28,6 +28,44 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "dir": "ltr",
+  "categories": [
+    "health",
+    "fitness",
+    "food",
+    "lifestyle"
+  ],
+  "prefer_related_applications": false,
+  "screenshots": [
+    {
+      "src": "screenshots/1.jpg",
+      "sizes": "780x1688",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Inicio: tu siguiente paso y tu plan de hoy"
+    },
+    {
+      "src": "screenshots/2.jpg",
+      "sizes": "780x1688",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Entreno: tu rutina explicada paso a paso"
+    },
+    {
+      "src": "screenshots/3.jpg",
+      "sizes": "780x1688",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Chef IA: tu semana planificada al mejor precio"
+    },
+    {
+      "src": "screenshots/4.jpg",
+      "sizes": "780x1688",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Progreso: peso, tendencia y ritmo semanal"
     }
   ]
 }
