@@ -6,7 +6,11 @@ manifest.json     Datos de instalación: nombre, iconos, descripción y capturas
 sw.js             Service worker v3: funciona sin conexión
 icon-*.png        Iconos (192, 512 y 512 maskable)
 screenshots/      Capturas que muestra PWABuilder / Play Store al instalar
-.well-know        Nota antigua sobre assetlinks (ver abajo)
+presentacion.html Página de presentación para la UPV (con QR): /fit1/presentacion.html
+qr-fitpulse.svg   Código QR que abre la app (sirve para el póster o las diapositivas)
+icon-agua/entreno Iconos de los accesos directos (mantener pulsado el icono de la app)
+firebase/         Reglas de seguridad de Firestore y Storage (pegar en la consola)
+axon/             Portero con clave para tu Ollama (Axón)
 
 Para el APK sin barra de dirección (TWA), Android busca el archivo
   https://aaapruebaaa67-source.github.io/.well-known/assetlinks.json

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="only dark">
+<title>FitPulse · Entrena y come bien sin saber de fitness</title>
+<meta name="description" content="FitPulse es una app gratuita que te dice qué comer, cuántos gramos y cómo entrenar, con lo que tienes en casa y a tu presupuesto. Pensada para estudiantes y principiantes.">
+<meta property="og:type" content="website"><meta property="og:locale" content="es_ES">
+<meta property="og:title" content="FitPulse · Entrena y come bien sin saber de fitness">
+<meta property="og:description" content="Tu entrenador, tu nutricionista y tu lista de la compra en el bolsillo. Gratis.">
+<meta property="og:url" content="https://aaapruebaaa67-source.github.io/fit1/presentacion.html">
+<meta property="og:image" content="https://aaapruebaaa67-source.github.io/fit1/screenshots/1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icon-192.png">
+<meta name="theme-color" content="#07100a">
+<style>
+:root{--bg:#07100a;--bg2:#0d1a11;--card:rgba(255,255,255,.05);--line:rgba(255,255,255,.1);--txt:#f1f5f4;--mut:#b4b4bd;--lime:#a3e635;--cyan:#22d3ee;--violet:#c4b5fd;color-scheme:only dark}
+*{box-sizing:border-box}[hidden]{display:none!important}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(1000px 600px at 10% -10%,rgba(163,230,53,.13),transparent 60%),radial-gradient(900px 600px at 100% 10%,rgba(34,211,238,.09),transparent 55%),var(--bg);color:var(--txt);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--lime)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:8px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--lime);color:#000;padding:8px 12px;border-radius:8px;font-weight:700;z-index:10}.skip:focus{left:8px}
+header.top{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--lime);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:10px}
+.top nav a{color:var(--mut);text-decoration:none;margin-left:18px;font-size:15px}.top nav a:hover{color:var(--txt)}
+@media(max-width:640px){.top nav{display:none}}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:30px 0 60px}
+@media(max-width:860px){.hero{grid-template-columns:1fr;text-align:center}.hero .phone{margin:0 auto}}
+.tag{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(163,230,53,.12);color:#d9f99d;font-size:14px;font-weight:600;margin-bottom:16px}
+h1{font-size:clamp(36px,6vw,58px);line-height:1.05;margin:0 0 18px;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--lime)}
+.sub{font-size:clamp(17px,2.2vw,20px);color:#d4d4d8;margin:0 0 28px;max-width:560px}
+@media(max-width:860px){.sub{margin-left:auto;margin-right:auto}}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}@media(max-width:860px){.ctas{justify-content:center}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:14px 26px;border-radius:14px;font-weight:800;font-size:17px;text-decoration:none;border:0;cursor:pointer}
+.btn-main{background:linear-gradient(110deg,#a3e635,#34d399);color:#04140a;box-shadow:0 10px 30px -8px rgba(163,230,53,.55)}
+.btn-ghost{background:var(--card);color:var(--txt);border:1px solid var(--line)}
+.fine{color:var(--mut);font-size:14px;margin-top:14px}
+.phone{width:min(320px,80vw);border-radius:36px;padding:10px;background:#111;border:1px solid var(--line);box-shadow:0 30px 80px -20px rgba(0,0,0,.8),0 0 60px -10px rgba(163,230,53,.25)}
+.phone img{display:block;width:100%;border-radius:28px}
+section{padding:56px 0}
+h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 12px;letter-spacing:-.01em}
+.lead{color:#d4d4d8;max-width:680px;margin:0 0 36px}
+.problem{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:760px){.problem{grid-template-columns:1fr}}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.pcard b{display:block;font-size:19px;margin-bottom:6px}.pcard p{margin:0;color:var(--mut)}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:64px}
+.feat.rev .ftxt{order:2}@media(max-width:860px){.feat{grid-template-columns:1fr;gap:24px}.feat.rev .ftxt{order:0}.feat .phone{margin:0 auto}}
+.feat h3{font-size:clamp(24px,3vw,32px);margin:6px 0 10px;line-height:1.2}
+.feat .kick{color:var(--lime);font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.06em}
+.feat p{color:#d4d4d8;margin:0 0 14px}
+.feat ul{margin:0;padding-left:20px;color:#d4d4d8}.feat li{margin:6px 0}
+.care{background:linear-gradient(135deg,rgba(196,181,253,.12),rgba(34,211,238,.06));border:1px solid rgba(196,181,253,.25);border-radius:24px;padding:32px}
+.care h2{color:#ddd6fe}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}@media(max-width:860px){.grid4{grid-template-columns:1fr 1fr}}@media(max-width:480px){.grid4{grid-template-columns:1fr}}
+.mini{background:rgba(0,0,0,.25);border-radius:16px;padding:16px}.mini b{display:block;margin-bottom:4px}.mini span{color:var(--mut);font-size:15px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}@media(max-width:760px){.facts{grid-template-columns:1fr 1fr}}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;text-align:center}
+.fact strong{display:block;font-size:32px;color:var(--lime);line-height:1.1}.fact span{color:var(--mut);font-size:15px}
+.install{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px}
+@media(max-width:760px){.install{grid-template-columns:1fr;text-align:center}.install .qr{margin:0 auto}}
+.qr{width:200px;height:200px;background:#fff;border-radius:18px;padding:10px}.qr img{width:100%;height:100%}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px;text-align:left}@media(max-width:600px){.steps{grid-template-columns:1fr}}
+.steps div{background:rgba(0,0,0,.25);border-radius:14px;padding:14px 16px}.steps b{display:block;margin-bottom:4px}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:4px 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:700;padding:14px 0;list-style:none;min-height:44px}summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--lime);font-size:22px;line-height:1}details[open] summary::after{content:"−"}
+details p{margin:0 0 16px;color:#d4d4d8}
+.final{text-align:center;padding:72px 20px}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--mut);font-size:14px;text-align:center}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="#"><img src="icon-192.png" alt="" width="36" height="36">FitPulse</a>
+  <nav aria-label="Secciones"><a href="#como">Cómo funciona</a><a href="#cuidate">Modo Cuídate</a><a href="#instalar">Instalar</a><a href="#faq">Preguntas</a></nav>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="h-hero" style="padding-top:20px">
+  <div>
+    <span class="tag">Gratis · sin anuncios · en español</span>
+    <h1 id="h-hero">Entrena y come bien <em>sin saber de fitness</em></h1>
+    <p class="sub">FitPulse te dice qué comer, cuántos gramos y cómo entrenar hoy, con lo que tienes en casa y lo que te cabe en el bolsillo. Tu entrenador, tu nutricionista y tu lista de la compra en una sola app.</p>
+    <div class="ctas">
+      <a class="btn btn-main" href="./index.html">Abrir FitPulse gratis</a>
+      <button class="btn btn-ghost" id="installBtn" type="button" hidden>📲 Instalar en el móvil</button>
+      <a class="btn btn-ghost" href="#instalar" id="howBtn">📲 Cómo instalarla</a>
+    </div>
+    <p class="fine">Funciona en Android, iPhone y ordenador. Sin descargar nada de una tienda.</p>
+  </div>
+  <div class="phone"><img src="screenshots/1.jpg" alt="Pantalla de inicio de FitPulse: tarjeta «Tu siguiente paso» que dice «Hoy toca entrenar», la mascota zorro y el plan del día" width="780" height="1688"></div>
+</section>
+
+<section aria-labelledby="h-prob">
+  <h2 id="h-prob">Empezar a cuidarse no debería ser tan difícil</h2>
+  <p class="lead">Las apps de fitness están hechas para quien ya sabe. Si empiezas de cero, te encuentras con esto:</p>
+  <div class="problem">
+    <div class="pcard"><b>😵 Palabras que no entiendes</b><p>Macros, TMB, déficit, 4×8-12… Nadie te explica qué significa ni qué hacer con ello.</p></div>
+    <div class="pcard"><b>🛒 Dietas que no puedes pagar</b><p>Planes con salmón y quinoa cuando tienes 30 € para la semana y una nevera de piso de estudiantes.</p></div>
+    <div class="pcard"><b>📉 Abandonar a la semana</b><p>Mucho que apuntar, poca recompensa y ninguna pista de cuál es el siguiente paso.</p></div>
+  </div>
+</section>
+
+<section id="como" aria-labelledby="h-como">
+  <h2 id="h-como">Cómo te ayuda FitPulse</h2>
+  <p class="lead">Una sola idea: abrir la app y saber exactamente qué hacer ahora.</p>
+
+  <div class="feat">
+    <div class="ftxt">
+      <span class="kick">Tu siguiente paso</span>
+      <h3>Una tarea clara cada vez que la abres</h3>
+      <p>En vez de un panel lleno de números, FitPulse te propone una sola acción: un vaso de agua, tu entreno o tu cena. La haces, ganas una recompensa y tu mascota lo celebra contigo.</p>
+      <ul><li>Calorías y macros calculados para ti, con límites seguros</li><li>Racha, medallas y una mascota que crece contigo</li><li>Recordatorios suaves de agua y entreno</li></ul>
+    </div>
+    <div class="phone"><img src="screenshots/5.jpg" alt="Inicio de FitPulse: «Tu plan para hoy» con tres pasos y barras de calorías y proteína que dicen «Vas por la mitad»" width="780" height="1688" loading="lazy"></div>
+  </div>
+
+  <div class="feat rev">
+    <div class="ftxt">
+      <span class="kick">Entreno</span>
+      <h3>Tu rutina explicada como te la explicaría un amigo</h3>
+      <p>Cada ejercicio con su técnica en una frase, y la notación del gimnasio traducida: «4×6-10» es «4 series de 6 a 10 repeticiones». Cronómetro, descanso entre series y récords incluidos.</p>
+      <ul><li>Push/Pull/Legs, Fullbody, calistenia, cardio o sin rutina</li><li>Aviso de descanso entre series</li><li>Gráfica de fuerza para ver que progresas</li></ul>
+    </div>
+    <div class="phone"><img src="screenshots/2.jpg" alt="Pantalla Entreno: rutina Push/Pull/Legs con press banca, dominadas y sentadilla, cada uno con su explicación" width="780" height="1688" loading="lazy"></div>
+  </div>
+
+  <div class="feat">
+    <div class="ftxt">
+      <span class="kick">Chef IA</span>
+      <h3>Tu semana planificada al mejor precio</h3>
+      <p>Dile cuánto quieres gastar y dónde compras. FitPulse te planifica qué comer cada día, en gramos exactos, y la lista de la compra de toda la semana que cumple tus macros.</p>
+      <ul><li>Mercadona, Carrefour, Lidl, Aldi o Dia</li><li>Con lo que ya tienes en casa («Cuadra mi día»)</li><li>Vegetariano y alergias tenidos en cuenta</li></ul>
+    </div>
+    <div class="phone"><img src="screenshots/3.jpg" alt="Pantalla Chef IA: piloto automático semanal con presupuesto de 30 euros y elección de supermercado" width="780" height="1688" loading="lazy"></div>
+  </div>
+
+  <div class="feat rev">
+    <div class="ftxt">
+      <span class="kick">Progreso</span>
+      <h3>La tendencia real, no el susto de un día</h3>
+      <p>El peso sube y baja por el agua o la sal. FitPulse te enseña la media de 7 días, tu ritmo semanal y te avisa si vas demasiado rápido, para que no pierdas músculo ni la motivación.</p>
+      <ul><li>Guía de cuándo y cómo pesarte</li><li>Medidas de cintura, brazo, pecho y muslo</li><li>Fotos de progreso que se quedan en tu móvil</li></ul>
+    </div>
+    <div class="phone"><img src="screenshots/4.jpg" alt="Pantalla Progreso: gráfica de peso con tendencia de 7 días y ritmo de menos 0,45 kilos por semana" width="780" height="1688" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="cuidate" aria-labelledby="h-care">
+  <div class="care">
+    <h2 id="h-care">💚 Modo Cuídate: una app de fitness que no hace daño</h2>
+    <p class="lead" style="margin-bottom:0">Contar calorías no es bueno para todo el mundo. Para quien tiene una relación difícil con la comida o con su cuerpo, FitPulse tiene un modo sin números, sin báscula y sin metas de peso.</p>
+    <div class="grid4">
+      <div class="mini"><b>🍽️ Sin calorías</b><span>Platos equilibrados con dibujos, no cifras.</span></div>
+      <div class="mini"><b>🌱 Un jardín que crece</b><span>Cuidarte hace florecer tu jardín, no bajar un número.</span></div>
+      <div class="mini"><b>🫁 Herramientas de calma</b><span>Respiración, compañía al comer y movimiento amable.</span></div>
+      <div class="mini"><b>🆘 Red de seguridad</b><span>Teléfonos gratuitos de ayuda (024, ANAR, ADANER) a un toque.</span></div>
+    </div>
+    <p style="color:#d4d4d8;margin:18px 0 0">Además, la app nunca propone comer menos a menores de edad ni a personas con peso bajo, y nunca recorta calorías si te pasas un día.</p>
+  </div>
+</section>
+
+<section aria-labelledby="h-facts">
+  <h2 id="h-facts">Hecha con cuidado</h2>
+  <p class="lead">Lo que hay detrás de cada número que te enseña la app.</p>
+  <div class="facts">
+    <div class="fact"><strong>1.000</strong><span>perfiles simulados para comprobar que los cálculos son seguros</span></div>
+    <div class="fact"><strong>0 €</strong><span>para usarla, sin anuncios ni suscripción</span></div>
+    <div class="fact"><strong>WCAG AA</strong><span>contraste, letra y botones pensados para todos</span></div>
+    <div class="fact"><strong>Offline</strong><span>funciona sin conexión y sincroniza al volver</span></div>
+  </div>
+</section>
+
+<section id="instalar" aria-labelledby="h-inst">
+  <div class="install">
+    <div class="qr"><img src="qr-fitpulse.svg" alt="Código QR que abre FitPulse en aaapruebaaa67-source.github.io/fit1" width="180" height="180"></div>
+    <div>
+      <h2 id="h-inst">Tenla en tu móvil en 20 segundos</h2>
+      <p style="color:#d4d4d8;margin:0">Escanea el código con la cámara o abre <a href="./index.html">aaapruebaaa67-source.github.io/fit1</a>. Después:</p>
+      <div class="steps">
+        <div><b>🤖 Android (Chrome o Samsung)</b>Menú ⋮ → <b style="display:inline">Instalar aplicación</b> o «Añadir a pantalla de inicio».</div>
+        <div><b>🍎 iPhone (Safari)</b>Botón Compartir → <b style="display:inline">Añadir a pantalla de inicio</b>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="h-faq">
+  <h2 id="h-faq">Preguntas frecuentes</h2>
+  <details><summary>¿Es gratis de verdad?</summary><p>Sí. Sin anuncios, sin suscripción y sin funciones bloqueadas.</p></details>
+  <details><summary>¿Tengo que saber de nutrición o de gimnasio?</summary><p>No. Está pensada para quien empieza: cada término viene explicado y tiene un glosario con las palabras que verás.</p></details>
+  <details><summary>¿Qué pasa con mis datos?</summary><p>Se guardan en tu móvil y, si inicias sesión, en tu cuenta para no perderlos. Las fotos de progreso no salen de tu dispositivo. No se venden ni se comparten con nadie. Puedes descargarlos o borrar tu cuenta cuando quieras.</p></details>
+  <details><summary>¿Sustituye a un nutricionista o a un médico?</summary><p>No. FitPulse da estimaciones orientativas para empezar con buenos hábitos. Si tienes una condición médica o un trastorno de la conducta alimentaria, consulta a un profesional; la app te ayuda a compartir un resumen con tu equipo de salud.</p></details>
+  <details><summary>¿Funciona sin internet?</summary><p>Sí. Una vez abierta, puedes apuntar comidas y entrenos sin conexión; se sincronizan cuando vuelves a tener red.</p></details>
+</section>
+
+<section class="final" aria-labelledby="h-final">
+  <h2 id="h-final">Tu primer paso dura 10 segundos</h2>
+  <p class="lead" style="margin:0 auto 26px">Abre la app, responde 5 preguntas y te decimos qué hacer hoy.</p>
+  <a class="btn btn-main" href="./index.html">Empezar gratis</a>
+</section>
+</main>
+
+<footer>
+  <p>FitPulse · Proyecto presentado al Concurso de Ideas de la Universitat Politècnica de València</p>
+  <p>Creado y desarrollado por <b style="color:#f1f5f4">Carlos José Cañas Hernández</b> · <a href="./index.html">Abrir la app</a></p>
+</footer>
+</div>
+<script>
+let deferred=null;const ib=document.getElementById('installBtn'),hb=document.getElementById('howBtn');
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferred=e;ib.hidden=false;hb.hidden=true});
+ib.addEventListener('click',async()=>{if(!deferred)return;deferred.prompt();await deferred.userChoice.catch(()=>{});deferred=null;ib.hidden=true;hb.hidden=false});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>

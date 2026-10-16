@@ -1,0 +1,14 @@
+rules_version = '2';
+// Reglas de producción de FitPulse para las fotos — pégalas en:
+// Firebase Console → Storage → Reglas → Publicar
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /progress-photos/{userId}/{fileName=**} {
+      allow read, write, delete: if request.auth != null && request.auth.token.email == userId
+                                 && (request.resource == null || request.resource.size < 5 * 1024 * 1024);
+    }
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

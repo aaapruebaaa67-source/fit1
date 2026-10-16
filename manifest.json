@@ -67,5 +67,33 @@
       "form_factor": "narrow",
       "label": "Progreso: peso, tendencia y ritmo semanal"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Registrar agua",
+      "short_name": "+1 vaso",
+      "description": "Apunta un vaso de agua (250 ml) al instante",
+      "url": "./index.html?go=agua",
+      "icons": [
+        {
+          "src": "icon-agua.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Empezar entreno",
+      "short_name": "Entreno",
+      "description": "Abre tu rutina de hoy",
+      "url": "./index.html?go=entreno",
+      "icons": [
+        {
+          "src": "icon-entreno.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
   ]
 }

@@ -1,0 +1,36 @@
+rules_version = '2';
+// Reglas de FitPulse (v2). Pégalas en:
+// Firebase Console → Firestore Database → Reglas → Publicar
+//
+// Esto es lo que protege de verdad los datos y el panel de administración:
+// aunque alguien manipule la app en su navegador, Firestore solo le deja
+// tocar SU documento, y solo la cuenta del creador puede leer el resto.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+    function isMe(userId) { return signedIn() && request.auth.token.email == userId; }
+    function isOwner() {
+      return signedIn() && request.auth.token.email == 'carloscanashernandez67@gmail.com';
+    }
+
+    // Datos de cada persona: solo ella los lee y escribe. El creador puede LEER (panel).
+    match /users/{userId} {
+      allow read: if isMe(userId) || isOwner();
+      allow create, update: if isMe(userId) && request.resource.data.size() < 200;
+      allow delete: if isMe(userId);
+    }
+    match /userStats/{userId} {
+      allow read: if isMe(userId) || isOwner();
+      allow write: if isMe(userId);
+    }
+    // Copias de seguridad que hace "Exportar": solo su dueño (antes estaban bloqueadas).
+    match /backups/{userId} {
+      allow read, write: if isMe(userId);
+    }
+    // Todo lo demás, cerrado.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
